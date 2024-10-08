@@ -1,0 +1,108 @@
+<html>
+    <!-- //npm run devStart -->
+    <head>
+        <title>Chat Application</title>
+        <script defer src="http://localhost:7777/socket.io/socket.io.js"></script>
+        <script defer src="script.js"></script>
+       <style>
+  body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(187, 248, 244);
+    font-family: Arial, sans-serif;
+}
+
+#message-container {
+    background-color: rgb(245, 245, 245);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 600px;
+    width: 400px;
+    margin-top: 50px;
+    border-radius: 6px;
+    border: 2px solid none(52, 69, 253);
+    padding: 10px;
+    overflow-y: scroll;}
+
+#send-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
+}
+
+#message-input {
+    width: 320px;
+    height: 30px;
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+#send-button {
+    height: 30px;
+    width: 50px;
+    background-color: rgb(0, 0, 0);
+    color: #ffffff;
+    border-radius: 6px;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+}
+
+#send-button:hover {
+    background-color: #3bc4d3;
+    color: #000;
+}
+
+.message {
+    max-width: 75%;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+#title{
+    color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    font-family: monospace;
+    margin-left: 150px;
+}
+.message.left {
+    background-color: rgb(119, 241, 233);
+    align-self: flex-start;
+}
+
+.message.right {
+    background-color: rgb(187, 248, 244);
+    align-self: flex-end;
+}
+
+       </style>
+    </head>
+    <body>
+     <div id="message-container">
+        <!-- //npm run devStart -->
+           <div id="title">
+
+               <h1>Corsa</h1>
+           </div>
+         <form id="send-container">
+             <input type="=text" id="message-input">
+             <button type="submit" id="send-button">Send</button>
+             
+            </form>
+        </div>
+
+    </body>
+</html>
+<!-- //npm run devStart -->
